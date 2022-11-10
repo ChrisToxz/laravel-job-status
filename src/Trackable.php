@@ -68,6 +68,11 @@ trait Trackable
         return method_exists($this, 'displayName') ? $this->displayName() : static::class;
     }
 
+    public function setJobStatusId($id)
+    {
+        $this->statusId = $id;
+    }
+
     public function getJobStatusId()
     {
         return $this->statusId;
